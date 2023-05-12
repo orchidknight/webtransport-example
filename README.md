@@ -2,18 +2,20 @@
 
 #### Update dependencies:
 
-    `go mod tidy`
+    go mod tidy
 
 #### Run server:
 
-    `make server`
+    make server
 
 #### Run client: 
 
-    `make client`
+    make client
 
 #### The repository already generated empty certificates for the server. But we're skipping the security check for ease of demonstration. If you wish, you can generate your own certificates with the command:
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.crt
+
+#### A small logger and a config reader have also been added for ease of launch.
 
 Regarding desired requirements:
 
